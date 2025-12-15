@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valorant Birthday Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body class="main-body">
+  <audio id="bg-music" src="assets/ambient.mp3" loop autoplay></audio>
+
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="hero-tag">Valorant Birthday Protocol</div>
+        <h1>Happy Birthday, [Name]</h1>
+        <p class="hero-sub">
+          aka <strong>[Gamertag]</strong> | <span class="pill pill-purple">[Nickname One]</span>
+          | <span class="pill pill-gold">[Nickname Two]</span>
+        </p>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">Badge Slot #1</span>
+        <span class="badge">Badge Slot #2</span>
+        <span class="badge">Badge Slot #3</span>
+        <span class="badge">Badge Slot #4</span>
+        <span class="badge">Badge Slot #5</span>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <!-- Left column: Agent file + abilities -->
+      <section class="panel panel-agent">
+        <h2>Agent File // [CALLSIGN]</h2>
+        <p><strong>Role:</strong> [Support / Controller / Duelist]</p>
+        <p><strong>Known ally:</strong> [Party lead, duo, or squad note]</p>
+
+        <ul class="agent-list">
+          <li>Add a fun fact about this person.</li>
+          <li>Drop in a go-to quote or inside joke.</li>
+          <li>Call out a clutch playstyle or strength.</li>
+          <li>Include a hobby or talent outside the game.</li>
+          <li>List a routine ritual before queueing.</li>
+          <li>Leave one bullet for whatever else fits.</li>
+        </ul>
+
+        <div class="spray-box">
+          <img src="assets/rip_cypher.jpeg" alt="Spray placeholder" />
+          <p>Standard protocol: drop a spray, add a caption, and log a ritual.</p>
+        </div>
+      </section>
+
+      <section class="panel panel-abilities">
+        <h2>Birthday Abilities</h2>
+        <p class="light-text">Click an ability to view its birthday buff.</p>
+
+        <div class="ability-row">
+          <button class="ability-card active" data-ability="signature">
+            <span class="ability-short">E // Signature</span>
+            <span class="ability-name">Party Support</span>
+          </button>
+          <button class="ability-card" data-ability="utility">
+            <span class="ability-short">Q // Utility</span>
+            <span class="ability-name">Decor Drop</span>
+          </button>
+          <button class="ability-card" data-ability="passive">
+            <span class="ability-short">C // Passive</span>
+            <span class="ability-name">Hype Check</span>
+          </button>
+          <button class="ability-card" data-ability="ultimate">
+            <span class="ability-short">X // Ultimate</span>
+            <span class="ability-name">Confetti Storm</span>
+          </button>
+        </div>
+
+        <div class="ability-detail" id="ability-detail"></div>
+      </section>
+
+      <!-- Memory cards row -->
+      <section class="panel panel-memories">
+        <h2>Co-op Missions // Match History</h2>
+        <div class="memory-grid">
+          <article class="memory-card">
+            <h3>1. First Queue</h3>
+            <p>Describe how you met or the first time you queued together.</p>
+          </article>
+
+          <article class="memory-card">
+            <h3>2. Duo Locked</h3>
+            <p>Share what made you keep playing - maybe a clutch, a joke, or a perfect rotation.</p>
+          </article>
+
+          <article class="memory-card">
+            <h3>3. It Takes Two</h3>
+            <p>Log a co-op story or highlight outside Valorant that sums up the vibe.</p>
+          </article>
+
+          <article class="memory-card">
+            <h3>4. Agent Draft</h3>
+            <p>Note a memorable agent lock, mislock, or hilarious mishap.</p>
+          </article>
+
+          <article class="memory-card">
+            <h3>5. Daily Buff</h3>
+            <p>Capture a habit, update, or ritual that became a steady buff for the squad.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Letter -->
+      <section class="panel panel-letter">
+        <h2>Personal Message</h2>
+        <p class="letter" id="letter-text">
+          Happy birthday, [Name]!
+
+          Swap this paragraph with your own note, gratitude, or story. Keep it short and sweet or turn it into a full letter - whatever fits the person you are celebrating. This section keeps line breaks as you type them.
+
+          Signed,
+          [Your name / callsign]
+        </p>
+        <p class="letter-note">You can edit this text directly in <code>main.html</code>.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
